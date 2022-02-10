@@ -1,0 +1,8 @@
+name: Mobove
+version: 1.0
+main: mobi.MainMobi
+api-version: 1.18
+
+commands:
+  _obr:
+
