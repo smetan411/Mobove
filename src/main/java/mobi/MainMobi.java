@@ -8,7 +8,6 @@ public class MainMobi extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
         getCommand("_obr").setExecutor(new ObrPepa());
 
     }

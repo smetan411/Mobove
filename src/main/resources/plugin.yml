@@ -4,5 +4,16 @@ main: mobi.MainMobi
 api-version: 1.18
 
 commands:
-  _obr:
-
+  _papousekNaOvci:
+    _vesnicanNaKoni:
+    _zombieNaPavoukovi:
+    _duhovaOvecka:
+    _kocka:
+    _liska:
+    _obrPepa:
+    _prikladyMobu:
+    _vesnican:
+    _hejnoSlepic:
+    _rojVcel:
+    _smeckaVlku:
+    _stadoOvci:
