@@ -5,15 +5,15 @@ api-version: 1.18
 
 commands:
   _papousekNaOvci:
-    _vesnicanNaKoni:
-    _zombieNaPavoukovi:
-    _duhovaOvecka:
-    _kocka:
-    _liska:
-    _obrPepa:
-    _prikladyMobu:
-    _vesnican:
-    _hejnoSlepic:
-    _rojVcel:
-    _smeckaVlku:
-    _stadoOvci:
+  _vesnicanNaKoni:
+  _zombieNaPavoukovi:
+  _duhovaOvecka:
+  _kocka:
+  _liska:
+  _obrPepa:
+  _prikladyMobu:
+  _vesnican:
+  _hejnoSlepic:
+  _rojVcel:
+  _smeckaVlku:
+  _stadoOvci:
