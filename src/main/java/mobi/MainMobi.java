@@ -3,7 +3,7 @@ package mobi;
 import mobi.jezdci.PapousekNaOvci;
 import mobi.jezdci.VesnicanNaKoni;
 import mobi.jezdci.ZombieNaPavoukovi;
-import mobi.prikladyMobu.*;
+import mobi.vlastnosti.*;
 import mobi.skupinyMobu.HejnoSlepic;
 import mobi.skupinyMobu.RojVcel;
 import mobi.skupinyMobu.SmeckaVlku;

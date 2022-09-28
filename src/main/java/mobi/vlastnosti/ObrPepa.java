@@ -1,4 +1,4 @@
-package mobi.prikladyMobu;
+package mobi.vlastnosti;
 
 import mobi.PlayerCommandExecutor;
 import org.bukkit.Location;
