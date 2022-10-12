@@ -9,6 +9,8 @@ import org.bukkit.entity.Player;
 
 public class Kocka extends PlayerCommandExecutor {
 
+    //umisteni moba / clone().add()
+
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         Location mistoKocky = player.getLocation().add(2, 0, 2);
@@ -17,6 +19,7 @@ public class Kocka extends PlayerCommandExecutor {
         micinka.setCatType(Cat.Type.PERSIAN);
         micinka.setTamed(true);
         micinka.setBaby();
+        micinka.setSitting(true);
         micinka.setOwner(player);
         return true;
     }

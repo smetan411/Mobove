@@ -11,7 +11,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class DuhovaOvce extends PlayerCommandExecutor {
-
+    // pouziti tridy Timer a pole barev
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
 

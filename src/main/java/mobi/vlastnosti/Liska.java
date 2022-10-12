@@ -10,11 +10,9 @@ import org.bukkit.potion.PotionEffectType;
 
 public class Liska extends PlayerCommandExecutor {
     // můžeme si zadat jméno lišky nebo použít nastavené
-    // lišku umístíme o dva bloky od hráče
-
-    @Override
+       @Override
    public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
-        Location mistoMoba = playerLocation.add(2, 0, 2);
+        Location mistoMoba = playerLocation.clone().add(2, 0, 2);
         Fox liska = world.spawn(mistoMoba, Fox.class);
         liska.setFoxType(Fox.Type.RED);
         if (args.length > 0)
