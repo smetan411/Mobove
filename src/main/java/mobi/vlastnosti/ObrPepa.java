@@ -13,7 +13,7 @@ public class ObrPepa extends PlayerCommandExecutor {
 
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
-        Location mistoMoba = playerLocation.add(2, 0, 2);
+        Location mistoMoba = playerLocation.add(2,0,2);
         Giant obr = world.spawn(mistoMoba, Giant.class);
         obr.setCustomName("ObrPepa");
         obr.setCustomNameVisible(true);
