@@ -7,14 +7,12 @@ import org.bukkit.entity.*;
 
 
 public class PrikladyMobu extends PlayerCommandExecutor {
-    // nastaveni plochy na ktere se spawnuji mobi x, z -10/+10 bloku
-
     private Location mistoMobu(Location playerLocation) {
-
-        return new Location(playerLocation.getWorld(),
+        Location mistoVProstoru = new Location(playerLocation.getWorld(),
                 (playerLocation.getX() - 5 + Math.random() * 10),
                 (playerLocation.getY()),
                 (playerLocation.getZ() - 5 + Math.random() * 10));
+        return mistoVProstoru;
     }
 
     @Override

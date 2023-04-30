@@ -15,13 +15,14 @@ public class MainMobi extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getCommand("_papousekNaOvci").setExecutor(new PapousekNaOvci());
+        getCommand("_blabla").setExecutor(new PapousekNaOvci());
         getCommand("_vesnicanNaKoni").setExecutor(new VesnicanNaKoni());
         getCommand("_zombieNaPavoukovi").setExecutor(new ZombieNaPavoukovi());
         getCommand("_duhovaOvecka").setExecutor(new DuhovaOvce());
         getCommand("_kocka").setExecutor(new Kocka());
         getCommand("_liska").setExecutor(new Liska());
         getCommand("_obrPepa").setExecutor(new ObrPepa());
+        getCommand("_obrPepik").setExecutor(new ObrPepik());
         getCommand("_prikladyMobu").setExecutor(new PrikladyMobu());
         getCommand("_vesnican").setExecutor(new Vesnican());
         getCommand("_hejnoSlepic").setExecutor(new HejnoSlepic());
@@ -29,6 +30,7 @@ public class MainMobi extends JavaPlugin {
         getCommand("_smeckaVlku").setExecutor(new SmeckaVlku());
         getCommand("_stadoOvci").setExecutor(new StadoOvci());
         getCommand("_enderDrak").setExecutor(new EnderDrak());
+
 
 
     }

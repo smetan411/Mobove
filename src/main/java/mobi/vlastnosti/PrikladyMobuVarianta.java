@@ -7,7 +7,6 @@ import org.bukkit.entity.*;
 
 
 public class PrikladyMobuVarianta extends PlayerCommandExecutor {
-    // nastaveni plochy na ktere se spawnuji mobi x, z -10/+10 bloku
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
 
@@ -40,15 +39,15 @@ public class PrikladyMobuVarianta extends PlayerCommandExecutor {
 
     private static class RandomLocation extends Location {
 
-//       toto je konstruktor pomocí alt+insert
+        //      tento konstruktor je vygenerovany automaticky (ctrl+ins)
 //       public RandomLocation(World world, double x, double y, double z) {
 //            super(world, x, y, z);
 //        }
-//      tenhle je lepší:
+//      upraveno na:
         public RandomLocation(Location location) {
 
-           super(location.getWorld(), location.getX() - 10 + Math.random() * 20,
-                   location.getY(), location.getZ() - 10 + Math.random() * 20);
+            super(location.getWorld(), location.getX() - 10 + Math.random() * 20,
+                    location.getY(), location.getZ() - 10 + Math.random() * 20);
         }
     }
 }

@@ -10,8 +10,7 @@ import org.bukkit.potion.PotionEffectType;
 
 public class ObrPepa extends PlayerCommandExecutor {
     // zadávání PotionEffect
-
-    @Override
+   @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         Location mistoMoba = playerLocation.add(2,0,2);
         Giant obr = world.spawn(mistoMoba, Giant.class);

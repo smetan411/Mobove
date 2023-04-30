@@ -10,13 +10,20 @@ import org.bukkit.entity.Sheep;
 
 public class StadoOvci extends PlayerCommandExecutor {
 
+    private Location mistoMobu(Location playerLocation){
+        Location mistoVProstoru = new Location(playerLocation.getWorld(),
+                (playerLocation.getX() - 5 + Math.random() * 10),
+                (playerLocation.getY()),
+                (playerLocation.getZ() - 5 + Math.random() * 10));
+        return mistoVProstoru;
+    }
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         for (int pocet = 0; pocet < 10; pocet++) {
-            Location mistoOvci = new Location(world, (playerLocation.getX() - 5 + Math.random() * 10),
-                    (playerLocation.getY()), (playerLocation.getZ() - 5 + Math.random() * 10));
-            Sheep ovce = world.spawn(mistoOvci, Sheep.class);
-            Sheep jehnatko = (Sheep) world.spawnEntity(mistoOvci, EntityType.SHEEP);
+
+            Sheep ovce = world.spawn(mistoMobu(playerLocation), Sheep.class);
+            Sheep jehnatko = (Sheep) world.spawnEntity(mistoMobu(playerLocation), EntityType.SHEEP);
+
             ovce.setColor(DyeColor.YELLOW);
             ovce.setCustomName("ovce Bara");
             ovce.setCustomNameVisible(true);
@@ -26,9 +33,8 @@ public class StadoOvci extends PlayerCommandExecutor {
             jehnatko.setCustomNameVisible(true);
         }
         for (int i = 0; i < 5; i++) {
-            Location mistoBeranu = new Location(world, (playerLocation.getX() - 10 + Math.random() * 20),
-                    (playerLocation.getY()), (playerLocation.getZ() - 10 + Math.random() * 20));
-            Sheep beran = world.spawn(mistoBeranu, Sheep.class);
+
+            Sheep beran = world.spawn(mistoMobu(playerLocation), Sheep.class);
             beran.setColor(DyeColor.BLUE);
             beran.setCustomName("beran");
             beran.setCustomNameVisible(true);

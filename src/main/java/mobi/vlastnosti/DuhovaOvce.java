@@ -27,9 +27,7 @@ public class DuhovaOvce extends PlayerCommandExecutor {
     }
 
     private static class ObarveniOvce extends TimerTask {
-
         private Sheep ovce;
-
         private static DyeColor[] BARVY = {DyeColor.BLUE, DyeColor.GREEN, DyeColor.YELLOW, DyeColor.ORANGE, DyeColor.PINK,
                 DyeColor.PURPLE, DyeColor.RED, DyeColor.LIGHT_BLUE, DyeColor.LIME, DyeColor.WHITE};
         private int indexBarvy = 0;
