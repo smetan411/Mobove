@@ -39,11 +39,13 @@ public class PrikladyMobuVarianta extends PlayerCommandExecutor {
 
     private static class RandomLocation extends Location {
 
-        //      tento konstruktor je vygenerovany automaticky (ctrl+ins)
+//      tento konstruktor je vygenerovany automaticky (ctrl+ins)
 //       public RandomLocation(World world, double x, double y, double z) {
 //            super(world, x, y, z);
 //        }
 //      upraveno na:
+
+
         public RandomLocation(Location location) {
 
             super(location.getWorld(), location.getX() - 10 + Math.random() * 20,

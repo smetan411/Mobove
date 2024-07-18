@@ -17,7 +17,7 @@ public class PrikladyMobu extends PlayerCommandExecutor {
 
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
-
+        // svet nici enderdrak, wither a creaper
         Rabbit kralik = world.spawn(mistoMobu(playerLocation), Rabbit.class);
         Spider pavouk = world.spawn(mistoMobu(playerLocation), Spider.class);
         Zombie zombie = world.spawn(mistoMobu(playerLocation), Zombie.class);

@@ -15,6 +15,4 @@ public class EnderDrak extends PlayerCommandExecutor {
         drak.teleport(playerLocation.clone().add(0,10,0));
         return true;
     }
-
-
 }

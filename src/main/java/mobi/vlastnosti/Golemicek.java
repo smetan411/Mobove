@@ -14,6 +14,7 @@ public class Golemicek extends PlayerCommandExecutor {
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         Location mistoGolema = player.getLocation().add(2, 0, 2);
         Golem golem = (Golem) world.spawnEntity(mistoGolema, EntityType.IRON_GOLEM);
+        golem.setHealth(1);
         return true;
     }
 }

@@ -20,6 +20,7 @@ public class RojVcel extends PlayerCommandExecutor {
         for (int pocet = 0; pocet < 25; pocet++) {
             Bee vcela = world.spawn(mistoMobu(playerLocation), Bee.class);
             vcela.setAnger(2);
+            vcela.setHasNectar(true);
         }
         return true;
     }
