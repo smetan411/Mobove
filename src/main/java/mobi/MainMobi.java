@@ -32,8 +32,5 @@ public class MainMobi extends JavaPlugin {
         getCommand("_enderDrak").setExecutor(new EnderDrak());
         getCommand("_panda").setExecutor(new PandaMazel());
         getCommand("_golem").setExecutor(new Golemicek());
-
-
-
     }
 }
