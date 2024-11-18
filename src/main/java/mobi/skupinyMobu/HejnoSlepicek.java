@@ -11,12 +11,12 @@ public class HejnoSlepicek extends PlayerCommandExecutor {
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
 
-        for (int pocet = 0; pocet < 20; pocet++) {
-            Location mistoVProstoru = new Location(playerLocation.getWorld(),
-                    (playerLocation.getX() - 5 + Math.random() * 10),
-                    (playerLocation.getY()),
-                    (playerLocation.getZ() - 5 + Math.random() * 10));
+        Location mistoVProstoru = new Location(playerLocation.getWorld(),
+                (playerLocation.getX() - 5 + Math.random() * 10),
+                (playerLocation.getY()),
+                (playerLocation.getZ() - 5 + Math.random() * 10));
 
+        for (int pocet = 0; pocet < 20; pocet++) {
             Chicken slepice = world.spawn(mistoVProstoru, Chicken.class);
             slepice.setCustomName("slepicka");
             slepice.setCustomNameVisible(true);
