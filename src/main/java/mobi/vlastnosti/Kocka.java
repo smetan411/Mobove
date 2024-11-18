@@ -13,14 +13,16 @@ public class Kocka extends PlayerCommandExecutor {
 
     @Override
     public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
-        Location mistoKocky = player.getLocation().add(2, 0, 2);
-        Cat micinka = world.spawn(mistoKocky, Cat.class);
-        micinka.setCollarColor(DyeColor.RED);
-        micinka.setCatType(Cat.Type.PERSIAN);
-        micinka.setTamed(true);
-        micinka.setBaby();
-        micinka.setSitting(true);
-        micinka.setOwner(player);
+        Location mistoKocky = player.getLocation().clone().add(2,0,2);
+        Cat kocka = world.spawn(mistoKocky, Cat.class);
+        kocka.setCustomName("Kocicka");
+        kocka.setCustomNameVisible(true);
+        kocka.setCollarColor(DyeColor.RED);
+        kocka.setCatType(Cat.Type.PERSIAN);
+        kocka.setTamed(true);
+        kocka.setBaby();
+        kocka.setSitting(true);
+        kocka.setOwner(player);
         return true;
     }
 }

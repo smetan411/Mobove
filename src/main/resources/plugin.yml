@@ -4,7 +4,7 @@ main: mobi.MainMobi
 api-version: 1.21
 
 commands:
-  _blabla:
+  _papousek:
   _vesnicanNaKoni:
   _zombieNaPavoukovi:
   _duhovaOvecka:

@@ -10,15 +10,16 @@ import org.bukkit.potion.PotionEffectType;
 
 public class Liska extends PlayerCommandExecutor {
     // můžeme si zadat jméno lišky nebo použít nastavené
-       @Override
-   public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
+    @Override
+    public boolean onCommandPlayer(Player player, World world, Location playerLocation, String[] args) {
         Location mistoMoba = playerLocation.clone().add(2, 0, 2);
         Fox liska = world.spawn(mistoMoba, Fox.class);
         liska.setFoxType(Fox.Type.RED);
-        if (args.length > 0)
+        if (args.length > 0) {
             liska.setCustomName(args[0]);
-        else
+        } else {
             liska.setCustomName("Bystrouska");
+        }
         liska.setCustomNameVisible(true);
         liska.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 999999999, 3));
         return true;

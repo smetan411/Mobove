@@ -15,7 +15,7 @@ public class MainMobi extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getCommand("_blabla").setExecutor(new PapousekNaOvci());
+        getCommand("_papousek").setExecutor(new PapousekNaOvci());
         getCommand("_vesnicanNaKoni").setExecutor(new VesnicanNaKoni());
         getCommand("_zombieNaPavoukovi").setExecutor(new ZombieNaPavoukovi());
         getCommand("_duhovaOvecka").setExecutor(new DuhovaOvce());
